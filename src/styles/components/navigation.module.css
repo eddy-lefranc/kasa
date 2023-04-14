@@ -1,0 +1,35 @@
+.flexboxSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul {
+    gap: 40px;
+    list-style-type: none;
+}
+
+.colorFF6060 {
+    color: #FF6060;
+}
+
+.deleteTextDecoration {
+    text-decoration: none;
+}
+
+.deleteTextDecoration:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .ul {
+        gap: 20px
+    }
+}
+
+@media screen and (max-width: 510px) {
+    img {
+        width: 145px;
+    }
+}

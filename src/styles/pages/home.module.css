@@ -1,22 +1,71 @@
-.font {
+/* ======== Mise en forme page "Home" ======== */
+
+/* Configuration police */
+
+body {
     font-family: 'Montserrat', 'sans-serif';
     font-weight: 500;
     font-size: 24px;
     font-style: medium;
 }
 
-.margin {
+/* Marges pour les éléments header et main */
+
+header,
+main {
     margin: 40px 100px 0px 100px;
+    /* haut | droit | bas | gauche */
 }
 
-@media screen and (max-width: 768px) {
-    .margin {
+/* ======== Mise en forme de l'élément section (logements) ======== */
+
+/* Conteneur des logements */
+
+.main__section {
+    margin-top: 43px;
+    padding-top: 56px;
+    height: auto;
+    width: 100%;
+    border-radius: 25px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* ======== Media queries ======== */
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 1439px */
+
+@media screen and (max-width: 1439px) {
+
+    /* Modification des marges pour les éléments header et main */
+
+    header,
+    main {
         margin: 20px 20px 0px 20px;
     }
+
 }
 
-@media screen and (max-width: 510px) {
-    .font {
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* Modification de la taille de la police */
+
+    body {
         font-size: 12px;
     }
+
+    /* Modifications conteneur des logements  */
+
+    .main__section {
+        background-color: transparent;
+        flex-direction: column;
+        padding-top: 0px;
+        gap: 20px;
+    }
+
 }

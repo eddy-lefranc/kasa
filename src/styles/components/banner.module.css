@@ -1,0 +1,86 @@
+/* ======== Mise en forme des bannières et ses éléments ======== */
+
+/* Élément "div" utilisé avec les deux bannières */
+
+.main__banner__overlay {
+    background-color: rgba(0, 0, 0, 0.25);
+    /* Ajoute comme un filtre sur la bannière */
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+}
+
+/* Bannière page d'accueil */
+
+.main__banner {
+    margin-top: 70px;
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    background-image: url(/src/images/IMG.png);
+    background-size: cover;
+    /* L'image couvre toute la largeur/hauteur du conteneur, permet de rogner les parties qui dépassent si les proportions conteneur/image sont différentes */
+    background-position: center;
+    /* Définit la position de l'image d'arrière plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+p {
+    font-size: 48px;
+    z-index: 0;
+    /* Place le paragraphe au dessus de la bannière, pour que la couleur du texte ne soit pas altérée */
+    color: #FFFFFF;
+}
+
+/* Bannière page "A propos" */
+
+.main__banner__about {
+    margin-top: 50px;
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    background-image: url(/src/images/kalen-emsley-Bkci_8qcdvQ-unsplash-2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* ======== Media query ======== */
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* Élément "div" utilisé avec les deux bannières */
+
+    .main__banner__overlay {
+        border-radius: 10px;
+    }
+
+    /* Bannière page d'accueil */
+
+    .main__banner {
+        margin-top: 20px;
+        height: 111px;
+        border-radius: 10px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    /* Bannière page "A propos" */
+
+    .main__banner__about {
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+}

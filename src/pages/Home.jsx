@@ -1,22 +1,29 @@
-import Header from '../components/Header';
-import styles from '../styles/pages/home.module.css'
+// Importations
+
 import 'typeface-montserrat';
+import Header from '../components/Header';
+import { Banner } from '../components/Banner';
+import styles from '../styles/pages/home.module.css';
+import Card from '../components/Card';
+import Footer from '../components/Footer';
+
+// Définition de la fonction "Home"
 
 function Home() {
   return (
-    <div className={`${styles.margin} ${styles.font}`}>
-  <Header />
-  </div>
+    <>
+      <Header />
+      <main>
+        <Banner />
+        <section className={styles.main__section}>
+          <Card />
+        </section>
+      </main>
+      <Footer />
+    </>
   );
 }
 
-export default Home;
+// Exportation de la fonction "Home"
 
-/*import logements from '../data/logements.json';
-import { Link } from 'react-router-dom'; <ul>
-        {logements.map((housing) => (
-          <li key={housing.id}>
-            <Link to={`/housings/${housing.id}`}>{housing.title}</Link>
-          </li>
-        ))}
-      </ul> */
+export default Home;

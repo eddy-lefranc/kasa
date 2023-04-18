@@ -1,0 +1,54 @@
+/* ======== Mise en forme du composant "Header" ======== */
+
+/* Classes utilisées plusieurs fois */
+
+.flexboxSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteTextDecoration {
+    text-decoration: none;
+}
+
+.colorFF6060 {
+    color: #FF6060;
+}
+
+/* ======== Mise en forme de la barre de navigation ======== */
+
+/* Élément "ul" */
+
+.header__nav__ul {
+    gap: 40px;
+    /* Définit l'espacement entre "Accueil" et "A propos" */
+    list-style-type: none;
+}
+
+/* Éléments "a" au survol (barre de navigation) */
+
+.header__nav__ul a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ======== Media query ======== */
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
+
+@media screen and (max-width: 768px) {
+
+    /* Modification largeur du logo */
+
+    nav img {
+        width: 145px;
+    }
+
+    /* Modification de l'espacement entre "Accueil" et "A propos" */
+
+    .header__nav__ul {
+        gap: 20px
+    }
+
+}

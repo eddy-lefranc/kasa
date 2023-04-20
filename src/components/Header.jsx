@@ -1,7 +1,7 @@
 // Importations
 
 import { Link } from 'react-router-dom';
-import LOGO from '../images/logos/LOGO.png';
+import LOGO from '../images/logo/LOGO.png';
 import styles from '../styles/components/header.module.css';
 
 // Définition de la fonction "Header"

@@ -1,0 +1,59 @@
+/* ======== Mise en forme du composant "Collapse" ======== */
+
+.main__collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 75vh;
+    background: #FFF;
+}
+
+.main__collapse__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: absolute;
+    top: 10%;
+    width: 85%;
+}
+
+.main__collapse__wrap {
+    height: 50px;
+    background: #FF6060;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.main__collapse__wrap h1 {
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main__collapse__wrap span {
+    margin-right: 1.5rem;
+}
+
+.main__collapse__text {
+    padding: 0px 40px 0px 32px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FF6060;
+}
+
+.main__collapse__dropdown {
+    margin-top: -50px;
+    background-color: #F6F6F6;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

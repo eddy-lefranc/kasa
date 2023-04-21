@@ -9,13 +9,12 @@ import styles from '../styles/components/header.module.css';
 function Header() {
   return (
     <header>
-      <nav className={styles.flexboxSpaceBetween}>
+      <nav>
         <img src={LOGO} alt="logo-kasa" />
-        <ul className={` ${styles.flexboxSpaceBetween} ${styles.header__nav__ul}`}>
+        <ul className={styles.header__nav__ul}>
           <li>
             <Link
               to="/"
-              className={`${styles.deleteTextDecoration} ${styles.colorFF6060}`}
             >
               Accueil
             </Link>
@@ -23,7 +22,6 @@ function Header() {
           <li>
             <Link
               to="/about"
-              className={`${styles.deleteTextDecoration} ${styles.colorFF6060}`}
             >
               A propos
             </Link>

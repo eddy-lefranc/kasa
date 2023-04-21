@@ -1,22 +1,13 @@
 /* ======== Mise en forme du composant "Header" ======== */
 
-/* Classes utilisées plusieurs fois */
+/* Barre de navigation et élément "ul" */
 
-.flexboxSpaceBetween {
+nav,
+.header__nav__ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.deleteTextDecoration {
-    text-decoration: none;
-}
-
-.colorFF6060 {
-    color: #FF6060;
-}
-
-/* ======== Mise en forme de la barre de navigation ======== */
 
 /* Élément "ul" */
 
@@ -24,6 +15,13 @@
     gap: 40px;
     /* Définit l'espacement entre "Accueil" et "A propos" */
     list-style-type: none;
+}
+
+/* Éléments "a" (barre de navigation) */
+
+.header__nav__ul a {
+    text-decoration: none;
+    color: #FF6060;
 }
 
 /* Éléments "a" au survol (barre de navigation) */

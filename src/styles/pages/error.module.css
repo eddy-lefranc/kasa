@@ -1,0 +1,49 @@
+/* ======== Mise en forme page "Error" ======== */
+
+.main__heading {
+    margin: 150px 0px 66px 0px;
+    /* haut | droit | bas | gauche */
+    font-weight: 700;
+    font-size: 288px;
+    color: #FF6060;
+    text-align: center;
+}
+
+.main__paragraph {
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    text-align: center;
+}
+
+.main__a {
+    font-size: 18px;
+    color: #FF6060;
+    margin: 182px 0px 160px 0px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    /* Empêche le passage à la ligne au retrécissement de la page */
+    cursor: pointer;
+}
+
+/* ======== Media query ======== */
+
+@media screen and (max-width: 768px) {
+
+    .main__heading {
+        margin: 180px 0px 0px 0px;
+        font-size: 96px;
+    }
+
+    .main__paragraph {
+        font-size: 18px;
+    }
+
+    .main__a {
+        margin: 120px 0px 150px 0px;
+    }
+
+}

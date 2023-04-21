@@ -1,0 +1,41 @@
+/* Cards des logement */
+
+.main__section__a {
+    position: relative;
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #CC4141, #FF6060);
+    /* Dégradé allant de bas (#CC4141) en haut (#FF6060) */
+}
+
+.main__section__a img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(75%);
+    /* Baisse la clarté */
+}
+
+.main__section__a p {
+    position: absolute;
+    font-size: 18px;
+    top: 80%;
+    left: 3%;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+/* Media querie */
+
+@media screen and (max-width: 768px) {
+    .main__section__a {
+        height: 255px;
+        width: 100%;
+    }
+
+    .main__section__a img {
+        height: 255px;
+    }
+}

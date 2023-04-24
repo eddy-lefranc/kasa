@@ -10,7 +10,9 @@ function Header() {
   return (
     <header>
       <nav>
-        <img src={LOGO} alt="logo-kasa" />
+        <Link to="/">
+          <img src={LOGO} alt="logo-kasa" />
+        </Link>
         <ul className={styles.header__nav__ul}>
           <li>
             <Link

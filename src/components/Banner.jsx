@@ -2,23 +2,26 @@
 
 import styles from '../styles/components/banner.module.css'
 
+// Définition de la fonction "Banner"
+
+function Banner({ text, bannerClass }) {
+   const sectionClass = bannerClass;
+   if (typeof text === "string") {
+      return ( // Bannière page "Home"
+         <section className={styles[sectionClass]}>
+            <div className={styles.main__banner__overlay}></div>
+            <p>{text}</p>
+         </section>
+      )
+   } else {
+      return ( // Bannière page "About"
+         <section className={styles[sectionClass]}>
+            <div className={styles.main__banner__overlay}></div>
+         </section>
+      )
+   }
+}
+
 // Exportation de la fonction "Banner"
 
-export function Banner() {
-   return (
-      <section className={styles.main__banner}>
-         <div className={styles.main__banner__overlay}></div>
-         <p>Chez vous, partout et ailleurs</p>
-      </section>
-   )
-}
-
-// Exportation de la fonction "BannerAbout"
-
-export function BannerAbout() {
-   return (
-      <section className={styles.main__banner__about}>
-         <div className={styles.main__banner__overlay}></div>
-      </section>
-   )
-}
+export default Banner

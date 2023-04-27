@@ -1,0 +1,158 @@
+/* ======== Mise en forme page "Housing" ======== */
+
+/* Classe utilisée plusieurs fois */
+
+.main__housing__paragraph {
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+}
+
+/* Flexbox */
+
+.main__flexbox__space__between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__flexbox__column,
+.main__housing__host__informations {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__flexbox__host {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main__flexbox__space__between2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Mise en forme "div" qui contient le nom du logement et son emplacement */
+
+.main__housing__informations {
+    margin-bottom: 15px;
+}
+
+/* Nom du logement */
+
+.main__housing__title {
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+}
+
+.main__housing__paragraph__margin {
+    margin-top: -15px;
+}
+
+/* ======== NOM A COMPLETER,  CONSOLE LOG POUR MIEUX COMPRENDRE LES COMPONENTS ======== */
+
+.main__housing__host__informations {
+    margin-top: 25px;
+}
+
+/* Div qui contient le prénom et nom du propriétaire */
+
+.main__housing__host {
+    margin-right: 10px;
+    line-height: 10px;
+}
+
+/* Conteneur de l'image du propriétaire */
+
+.main__host__picture__container {
+    background-color: #C4C4C4;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    overflow: hidden;
+    /* Rogne l'image pour qu'elle s'affiche correctement dans le conteneur */
+}
+
+/* Photo du propriétaire */
+
+.main__host__picture {
+    /* Pour que l'image remplit entièrement le conteneur en hauteur et en largeur */
+    height: 100%;
+    width: 100%;
+}
+
+/* Note logement */
+
+.main__housing__rating {
+    padding-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+/* ======== Media queries ======== */
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 1155px */
+
+@media screen and (max-width: 1155px) {
+    .main__housing__title {
+        font-size: 27px;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 1024px */
+
+@media screen and (max-width: 1024px) {
+
+    .main__flexbox__space__between {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: normal;
+    }
+
+    .main__housing__paragraph__margin {
+        margin-top: 0px;
+    }
+
+    .main__housing__host__informations {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main__flexbox__host {
+        order: 1;
+    }
+
+    .main__housing__rating {
+        padding-top: 0px;
+    }
+
+    .main__flexbox__space__between2 {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 425px */
+
+@media screen and (max-width: 425px) {
+
+    .main__housing__title {
+        font-size: 18px;
+    }
+
+    .main__housing__paragraph {
+        font-size: 14px;
+    }
+
+
+    .main__housing__rating {
+        height: 13px;
+    }
+
+}

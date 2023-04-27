@@ -1,0 +1,22 @@
+/* ======== Mise en page du composant "Tag" ======== */
+
+.main__tags__container {
+    display: flex;
+    gap: 10px;
+}
+
+.main__tag__container {
+    border-radius: 10px;
+    height: 25px;
+    width: 130px;
+    background-color: #FF6060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__tag__container p {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 500;
+}

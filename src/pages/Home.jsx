@@ -2,7 +2,7 @@
 
 import 'typeface-montserrat';
 import Header from '../components/Header';
-import { Banner } from '../components/Banner';
+import Banner from '../components/Banner';
 import styles from '../styles/pages/home.module.css';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
@@ -14,7 +14,7 @@ function Home() {
     <>
       <Header />
       <main>
-        <Banner />
+        <Banner text="Chez vous, partout et ailleurs" bannerClass="main__banner" />
         <section className={styles.main__section}>
           <Card />
         </section>

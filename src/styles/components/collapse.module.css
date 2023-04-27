@@ -1,5 +1,7 @@
 /* ======== Mise en forme du composant "Collapse" ======== */
 
+/* Collapse page "About" */
+
 .main__collapse {
     display: flex;
     flex-direction: column;
@@ -18,6 +20,7 @@
 }
 
 .main__collapse__wrap {
+    border-radius: 5px;
     height: 50px;
     background: #FF6060;
     color: #FFFFFF;
@@ -57,7 +60,38 @@
     align-items: center;
 }
 
-/* ======== Media query ======== */
+/* Collapse page "Housing" */
+
+.main__collapse__container__housing {
+    margin: 30px 0px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 47%;
+}
+
+.main__collapse__dropdown__housing {
+    margin-top: -30px;
+    background-color: #F6F6F6;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__collapse__ul__housing {
+    padding: 0;
+    list-style: none;
+}
+
+/* ======== Media queries ======== */
+
+@media screen and (max-width: 1024px) {
+    .main__collapse__container__housing {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 425px) {
     .main__collapse__text {

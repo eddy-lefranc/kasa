@@ -1,9 +1,10 @@
 // Importations
 
-import Header from '../components/Header'
-import { BannerAbout } from '../components/Banner';
+import Header from '../components/Header';
+import Banner from '../components/Banner';
+import aboutData from '../data/AboutContent.json';
 import Collapse from '../components/Collapse';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
 
 // Définition de la fonction "About"
 
@@ -13,8 +14,8 @@ function About() {
     <>
       <Header />
       <main>
-        <BannerAbout />
-        <Collapse />
+        <Banner bannerClass="main__banner__about" />
+        <Collapse data={aboutData} />
       </main>
       <Footer />
     </>

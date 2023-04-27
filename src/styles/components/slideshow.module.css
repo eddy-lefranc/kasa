@@ -1,0 +1,81 @@
+/* ======== Mise en page du composant "Slideshow" ======== */
+
+.main__slideshow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 415px;
+}
+
+.main__slideshow__slide {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__slideshow__hidden {
+    display: none;
+}
+
+.main__slideshow__arrow {
+    position: absolute;
+}
+
+.main__slideshow__arrow:hover {
+    cursor: pointer;
+}
+
+.main__slideshow__icon__left {
+    left: 25px;
+}
+
+.main__slideshow__icon__right {
+    right: 25px;
+}
+
+.main__slideshow__counter {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+}
+
+.main__slideshow__counter__paragraph {
+    margin: 0;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+/* ======== Media queries ======== */
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
+
+@media screen and (max-width: 768px) {
+
+    .main__slideshow {
+        height: 255px;
+    }
+
+    .main__slideshow__slide {
+        border-radius: 10px;
+    }
+
+    .main__slideshow__arrow {
+        width: 12px;
+        height: 20px;
+    }
+
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 425px */
+
+@media screen and (max-width: 425px) {
+
+    .main__slideshow__counter {
+        display: none;
+    }
+
+}

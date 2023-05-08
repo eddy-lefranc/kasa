@@ -12,7 +12,7 @@ function Card() {
       <article>
         <img src={housing.cover} alt={housing.title} />
         <div>
-          <p>{housing.title}</p>
+          <h2>{housing.title}</h2>
         </div>
       </article>
     </Link >

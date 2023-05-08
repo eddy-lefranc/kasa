@@ -1,7 +1,7 @@
 // Importations
 
 import { Link } from 'react-router-dom';
-import LOGO from '../images/logo/LOGO.png';
+import logo from '../images/logos/logo-header.png';
 import styles from '../styles/components/header.module.css';
 
 // Définition de la fonction "Header"
@@ -11,20 +11,16 @@ function Header() {
     <header>
       <nav>
         <Link to="/">
-          <img src={LOGO} alt="logo-kasa" />
+          <img src={logo} alt="logo-kasa" />
         </Link>
         <ul className={styles.header__nav__ul}>
           <li>
-            <Link
-              to="/"
-            >
+            <Link to="/">
               Accueil
             </Link>
           </li>
           <li>
-            <Link
-              to="/about"
-            >
+            <Link to="/about">
               A propos
             </Link>
           </li>

@@ -8,8 +8,6 @@ Ce projet a été réalisé dans le cadre de la formation "Développeur Web" d'O
 
 ## Outils utilisés
 
-### Outils généraux
-
 - Figma (visualisation des maquettes réalisées, téléchargement de ressources utiles au projet) ; 
 - Git / Github.
 
@@ -30,7 +28,7 @@ Afin de pouvoir accéder au projet, veuillez suivre ces différentes étapes :
 
 1/ Télécharger le fichier au format ZIP sur Github ou bien cloner le projet sur un terminal.\
 2/ Installer les dépendances du projet avec la commande "npm install".\
-3/ Démarrer l'application avec la commande "npm start".\
+3/ Démarrer l'application avec la commande "npm start".
 
 En suivant ces étapes, l'application devrait se lancer automatiquement sur votre navigateur.
 

@@ -18,7 +18,7 @@
     height: 223px;
     width: 100%;
     border-radius: 25px;
-    background-image: url(/src/images/IMG.png);
+    background-image: url(/src/images/photos/photo-home.png);
     background-size: cover;
     /* L'image couvre toute la largeur/hauteur du conteneur, permet de rogner les parties qui dépassent si les proportions conteneur/image sont différentes */
     background-position: center;
@@ -29,8 +29,9 @@
     position: relative;
 }
 
-.main__banner p {
+.main__banner h1 {
     font-size: 48px;
+    font-weight: 500;
     z-index: 0;
     /* Place le paragraphe au dessus de la bannière, pour que la couleur du texte ne soit pas altérée */
     color: #FFFFFF;
@@ -43,7 +44,7 @@
     height: 223px;
     width: 100%;
     border-radius: 25px;
-    background-image: url(/src/images/kalen-emsley-Bkci_8qcdvQ-unsplash-2.png);
+    background-image: url(/src/images/photos/photo-about.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -72,7 +73,9 @@
         border-radius: 10px;
     }
 
-    .main__banner p {
+    /* Titre bannière page d'accuei */
+
+    .main__banner h1 {
         font-size: 24px;
         padding-left: 3%;
     }

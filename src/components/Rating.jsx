@@ -1,7 +1,7 @@
 // Importations
 
-import greyStar from '../images/Star.png';
-import redStar from '../images/Star2.png';
+import greyStar from '../images/icones/Star.png';
+import redStar from '../images/icones/Star2.png';
 import styles from '../styles/pages/housing.module.css';
 
 // Définition de la fonction "Rating"

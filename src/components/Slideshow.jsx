@@ -1,8 +1,8 @@
 // Importations
 
 import styles from '../styles/components/slideshow.module.css';
-import vectorLeft from '../images/vectorLeft.png';
-import vectorRight from '../images/vectorRight.png';
+import vectorLeft from '../images/icones/vectorLeft.png';
+import vectorRight from '../images/icones/vectorRight.png';
 import { useState } from 'react';
 
 // Définition de la fonction "Slideshow"

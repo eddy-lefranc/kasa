@@ -13,9 +13,11 @@
 
 .main__collapse__container {
     margin: 30px 0px 25px 0px;
+    /* haut | droit | bas | gauche */
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    row-gap: 30px;
+    /* Espace les différents collapses */
     width: 85%;
 }
 
@@ -26,19 +28,21 @@
     color: #FFFFFF;
     display: flex;
     justify-content: space-between;
+    /* Permet d'espacer le titre du collapse et l'icône aux extrémités du collapse */
     align-items: center;
     width: 100%;
     cursor: pointer;
 }
 
-.main__collapse__wrap h1 {
-    padding: 18px;
+.main__collapse__about__h1 {
+    padding: 18px 0px 18px 18px;
+    /* haut | droit | bas | gauche */
     font-size: 24px;
     font-weight: 500;
 }
 
 .main__collapse__wrap span {
-    margin-right: 24px;
+    padding-right: 24px;
 }
 
 .main__collapse__text {
@@ -51,6 +55,7 @@
 
 .main__collapse__dropdown {
     margin-top: -30px;
+    /* Permet de lier le titre du collapse avec son contenu  */
     background-color: #F6F6F6;
     width: 100%;
     height: auto;
@@ -70,6 +75,12 @@
     width: 47%;
 }
 
+.main__collapse__housing__h1 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 18px;
+}
+
 .main__collapse__dropdown__housing {
     margin-top: -30px;
     background-color: #F6F6F6;
@@ -87,14 +98,30 @@
 
 /* ======== Media queries ======== */
 
-@media screen and (max-width: 1024px) {
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
+
+@media screen and (max-width: 768px) {
+
     .main__collapse__container__housing {
         width: 100%;
     }
+
 }
 
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 425px */
+
 @media screen and (max-width: 425px) {
+
+    /* Titre du collapse */
+
+    .main__collapse__wrap h1 {
+        font-size: 13px;
+    }
+
+    /* Texte du collapse */
+
     .main__collapse__text {
         font-size: 12px;
     }
+
 }

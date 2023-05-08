@@ -1,9 +1,13 @@
 /* ======== Mise en page du composant "Tag" ======== */
 
+/* Conteneur des différents composants "Tags" */
+
 .main__tags__container {
     display: flex;
     gap: 10px;
 }
+
+/* Conteneur d'un composant "Tag" */
 
 .main__tag__container {
     border-radius: 10px;
@@ -21,9 +25,13 @@
     font-weight: 500;
 }
 
-/* ======== Media query ======== */
+/* ======== Media queries ======== */
+
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
 
 @media screen and (max-width: 768px) {
+
+    /* Conteneur d'un composant "Tag" */
 
     .main__tag__container {
         border-radius: 5px;
@@ -35,7 +43,11 @@
 
 }
 
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 425px */
+
 @media screen and (max-width: 425px) {
+
+    /* Conteneur d'un composant "Tag" */
 
     .main__tag__container p {
         font-size: 10px;

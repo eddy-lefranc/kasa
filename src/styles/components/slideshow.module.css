@@ -1,5 +1,7 @@
 /* ======== Mise en page du composant "Slideshow" ======== */
 
+/* Conteneur du diaporama */
+
 .main__slideshow {
     position: relative;
     display: flex;
@@ -9,6 +11,8 @@
     height: 415px;
 }
 
+/* Image du diaporama */
+
 .main__slideshow__slide {
     border-radius: 25px;
     width: 100%;
@@ -16,9 +20,13 @@
     object-fit: cover;
 }
 
+/* Masquage des images non actives du diaporama */
+
 .main__slideshow__hidden {
     display: none;
 }
+
+/* Flèches du diaporama */
 
 .main__slideshow__arrow {
     position: absolute;
@@ -35,6 +43,8 @@
 .main__slideshow__icon__right {
     right: 25px;
 }
+
+/* Compteur d'images du diaporama */
 
 .main__slideshow__counter {
     display: flex;
@@ -55,13 +65,19 @@
 
 @media screen and (max-width: 768px) {
 
+    /* Conteneur du diaporama */
+
     .main__slideshow {
         height: 255px;
     }
 
+    /* Image du diaporama */
+
     .main__slideshow__slide {
         border-radius: 10px;
     }
+
+    /* Flèche du diaporama */
 
     .main__slideshow__arrow {
         width: 12px;
@@ -73,6 +89,8 @@
 /* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 425px */
 
 @media screen and (max-width: 425px) {
+
+    /* Compteur d'images du diaporama */
 
     .main__slideshow__counter {
         display: none;

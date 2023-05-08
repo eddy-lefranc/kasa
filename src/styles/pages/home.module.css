@@ -1,15 +1,5 @@
 /* ======== Mise en forme page "Home" ======== */
 
-/* Configuration générale */
-
-body {
-    box-sizing: border-box;
-    font-family: 'Montserrat', 'sans-serif';
-    font-weight: 500;
-    font-size: 24px;
-    font-style: medium;
-}
-
 /* Marges pour les éléments header et main */
 
 header,

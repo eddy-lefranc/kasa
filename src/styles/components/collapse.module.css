@@ -1,25 +1,8 @@
-/* ======== Mise en forme du composant "Collapse" ======== */
+/* ======== Mise en forme des composants "Collapse" sur les pages 'About' et 'Housing' ======== */
 
-/* Collapse page "About" */
+/* ======== Classes communes ======== */
 
-.main__collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    background: #FFF;
-}
-
-.main__collapse__container {
-    margin: 30px 0px 25px 0px;
-    /* haut | droit | bas | gauche */
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    /* Espace les différents collapses */
-    width: 85%;
-}
+/* Mise en page de la partie qui contient le titre et l'icône des collapses */
 
 .main__collapse__wrap {
     border-radius: 5px;
@@ -34,16 +17,13 @@
     cursor: pointer;
 }
 
-.main__collapse__about__h1 {
-    padding: 18px 0px 18px 18px;
-    /* haut | droit | bas | gauche */
-    font-size: 24px;
-    font-weight: 500;
-}
+/* Position de l'icône */
 
 .main__collapse__wrap span {
     padding-right: 24px;
 }
+
+/* Mise en forme du contenu du collapse */
 
 .main__collapse__text {
     padding: 0px 40px 0px 18px;
@@ -52,6 +32,42 @@
     color: #FF6060;
     text-align: justify;
 }
+
+/* ======== Collapse page 'About' ======== */
+
+/* Conteneur global */
+
+.main__collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background: #FFF;
+}
+
+/* Conteneur d'un collapse de la page 'About' */
+
+.main__collapse__container {
+    margin: 30px 0px 25px 0px;
+    /* haut | droit | bas | gauche */
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    /* Espace les différents collapses */
+    width: 85%;
+}
+
+/* Titre du collapse page 'About' */
+
+.main__collapse__about__h1 {
+    padding: 18px 0px 18px 18px;
+    /* haut | droit | bas | gauche */
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* Section qui affiche le contenu d'un collapse */
 
 .main__collapse__dropdown {
     margin-top: -30px;
@@ -65,7 +81,9 @@
     align-items: center;
 }
 
-/* Collapse page "Housing" */
+/* ======== Collapse page "Housing" ======== */
+
+/* Conteneur d'un collapse de la page 'Housing' */
 
 .main__collapse__container__housing {
     margin: 30px 0px 25px 0px;
@@ -75,11 +93,15 @@
     width: 47%;
 }
 
+/* Titre du collapse de la page 'Housing' */
+
 .main__collapse__housing__h1 {
     font-size: 18px;
     font-weight: 500;
     padding: 18px;
 }
+
+/* Section qui affiche le contenu de la page 'Housing' */
 
 .main__collapse__dropdown__housing {
     margin-top: -30px;
@@ -91,6 +113,8 @@
     justify-content: center;
 }
 
+/* Mise en forme de la liste du collapse "Équipements de la page 'Housing' */
+
 .main__collapse__ul__housing {
     padding: 0;
     list-style: none;
@@ -101,6 +125,8 @@
 /* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
 
 @media screen and (max-width: 768px) {
+
+    /* Conteneur d'un collapse de la page 'Housing' */
 
     .main__collapse__container__housing {
         width: 100%;
@@ -118,7 +144,7 @@
         font-size: 13px;
     }
 
-    /* Texte du collapse */
+    /* Contenu du collapse */
 
     .main__collapse__text {
         font-size: 12px;

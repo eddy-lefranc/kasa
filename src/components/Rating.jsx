@@ -1,6 +1,10 @@
+// Importations
+
 import greyStar from '../images/Star.png';
 import redStar from '../images/Star2.png';
 import styles from '../styles/pages/housing.module.css';
+
+// Définition de la fonction "Rating"
 
 function Rating({ givenRating, givenClass }) {
     const ratingClass = givenClass
@@ -14,5 +18,7 @@ function Rating({ givenRating, givenClass }) {
         </div>
     );
 }
+
+// Exportation de la fonction "Rating"
 
 export default Rating;

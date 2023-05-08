@@ -1,9 +1,8 @@
 // Importations
 
-import 'typeface-montserrat';
+import styles from '../styles/pages/home.module.css';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import styles from '../styles/pages/home.module.css';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
 

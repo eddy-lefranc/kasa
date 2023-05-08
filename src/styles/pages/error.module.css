@@ -1,5 +1,7 @@
 /* ======== Mise en forme page "Error" ======== */
 
+/* Titre "404" */
+
 .main__heading {
     margin: 150px 0px 66px 0px;
     /* haut | droit | bas | gauche */
@@ -9,12 +11,16 @@
     text-align: center;
 }
 
+/* Paragraphe en dessous du titre "404" */
+
 .main__paragraph {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
     color: #FF6060;
     text-align: center;
 }
+
+/* Redirection page d'accueil */
 
 .main__a {
     font-size: 18px;
@@ -31,16 +37,25 @@
 
 /* ======== Media query ======== */
 
+/* Sur les écrans, quand la largeur de la fenêtre est inférieure ou égale à 768px */
+
 @media screen and (max-width: 768px) {
+
+    /* Titre "404" */
 
     .main__heading {
         margin: 180px 0px 0px 0px;
         font-size: 96px;
     }
 
+    /* Paragraphe en dessous du titre "404" */
+
     .main__paragraph {
         font-size: 18px;
+        font-weight: 500;
     }
+
+    /* Redirection page d'accueil */
 
     .main__a {
         margin: 120px 0px 150px 0px;

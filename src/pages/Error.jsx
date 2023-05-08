@@ -13,7 +13,7 @@ function Error() {
       <Header />
       <main>
         <h1 className={styles.main__heading}>404</h1>
-        <h2 className={styles.main__paragraph}>Oups! La page que vous demandez n'existe pas.</h2>
+        <p className={styles.main__paragraph}>Oups! La page que vous demandez n'existe pas.</p>
         <Link to="/" className={styles.main__a}>Retourner sur la page d'accueil</Link>
       </main>
       <Footer />

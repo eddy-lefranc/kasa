@@ -1,5 +1,6 @@
 // Importations
 
+import styles from '../styles/pages/about.module.css';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
@@ -14,7 +15,9 @@ function About() {
       <Header />
       <main>
         <Banner bannerClass="main__banner__about" />
-        <Collapse sections={dataCollapseAbout} />
+        <div className={styles.main__collapse}>
+          <Collapse page="about" sections={dataCollapseAbout} />
+        </div>
       </main>
       <Footer />
     </>

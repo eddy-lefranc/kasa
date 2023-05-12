@@ -1,0 +1,12 @@
+/* ======== Mise en forme page "About" ======== */
+
+/* Conteneur global des collapses de la page "About" */
+
+.main__collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background: #FFF;
+}

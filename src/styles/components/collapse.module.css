@@ -35,17 +35,6 @@
 
 /* ======== Collapse page 'About' ======== */
 
-/* Conteneur global */
-
-.main__collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    background: #FFF;
-}
-
 /* Conteneur d'un collapse de la page 'About' */
 
 .main__collapse__container {

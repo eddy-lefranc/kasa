@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Card from '../components/Card';
 import Footer from '../components/Footer';
+import data from '../data/logements.json';
 
 // Définition de la fonction "Home"
 
@@ -15,7 +16,7 @@ function Home() {
       <main>
         <Banner text="Chez vous, partout et ailleurs" bannerClass="main__banner" />
         <section className={styles.main__section}>
-          <Card />
+          <Card housingsData={data} />
         </section>
       </main>
       <Footer />

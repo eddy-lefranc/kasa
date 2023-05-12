@@ -3,7 +3,7 @@
 import styles from '../styles/pages/home.module.css';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
-import Card from '../components/Card';
+import CardList from '../components/CardList';
 import Footer from '../components/Footer';
 import data from '../data/logements.json';
 
@@ -16,7 +16,7 @@ function Home() {
       <main>
         <Banner text="Chez vous, partout et ailleurs" bannerClass="main__banner" />
         <section className={styles.main__section}>
-          <Card housingsData={data} />
+          <CardList housingsData={data} />
         </section>
       </main>
       <Footer />

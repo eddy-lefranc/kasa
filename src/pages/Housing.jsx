@@ -69,8 +69,8 @@ function Housing() {
           </div>
         </div>
         <div className={styles.main__flexbox__space__between2}>
-          <Collapse sections={descriptionArray} />
-          <Collapse sections={equipmentArray} />
+          <Collapse page="housing" sections={descriptionArray} />
+          <Collapse page="housing" sections={equipmentArray} />
         </div>
       </main>
       <Footer />
